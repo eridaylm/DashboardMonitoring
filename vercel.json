@@ -1,0 +1,16 @@
+{
+    "build": {
+        "env": {
+            "PNPM_FLAGS": "--no-frozen-lockfile"
+        }
+    },
+    "rewrites": [
+        { "source": "/register", "destination": "/register" },
+        { "source": "/login", "destination": "/login" },
+        { "source": "/dashboard", "destination": "/dashboard" },
+        { "source": "/forgotpassword", "destination": "/forgotpassword" },
+        { "source": "/", "destination": "/login" },
+        { "source": "/maps", "destination": "/maps" },
+        { "source": "/(.*/)", "destination": "/" }
+    ]
+}
